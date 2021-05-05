@@ -1,0 +1,7 @@
+---
+title: A Very Good Book
+subtitle: Fascinating Subject
+author: Author McAuthorson
+rights:  All Rights Reserved
+language: en-US
+...

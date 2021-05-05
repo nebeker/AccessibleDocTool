@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<title>READ ME - Generating accessible documents with Pandoc</title>
+
+<body>
+    <h1>READ ME - Generating accessible documents with Pandoc</h1>
+
+    <p>This document explains how to use the files in this archive (you should have found it inside
+        <strong>AccessibleDocs.zip</strong>).
+    </p>
+
+    <h2>What is Pandoc? How can I use it?</h2>
+
+    <p>Pandoc is a powerful text file converter. It can convert between formats like DOCX, LaTeX, PDF, EPUB, TXT, MD and
+        much more.</p>
+
+    <p>We're interested in its ability to convert from Markdown (<a
+            href="https://en.wikipedia.org/wiki/Markdown">Wikipedia article on Markdown</a>), a simple to use formatting
+        system to the following formats:</p>
+    <ul>
+        <li>DOCX - regular Microsoft Word files that are easier to navigate with screen readers;</li>
+        <li>PDF - portable files that look crisp at any zoom level for low vision users;</li>
+        <li>EPUB - book publication files that can be read on multiple devices and programs and easily allow users to
+            adapt colors and fonts families and sizes to their needs.</li>
+    </ul>
+
+    <p>After installing Pandoc and a LaTeX package, you'll be able to write accessible documents in Markdown and convert
+        them by running the <strong>.bat</strong> file on <strong>Windows</strong> or the <strong>.sh</strong> file on
+        <strong>Linux or macOS</strong>.
+    </p>
+
+    <h2>What do I install again?</h2>
+
+    <p>Pandoc and a LaTeX distribution.</p>
+
+    <h3>Installing Pandoc</h3>
+
+    <p>Go to <a href="https://pandoc.org/installing.html">Pandoc's installation page</a> and download the installer for
+        your platform. It'll be the first link in the page's main content. There are other installation options you may
+        prefer, if you're a more technical individual.</p>
+
+    <h3>Installing LaTeX</h3>
+
+    <p>After installing Pandoc itself, you'll need LaTeX. LaTeX is a powerful typesetting markup language, usually used
+        by academics, but we only need it as an intermediate step for generating PDFs.</p>
+
+    <p><strong>If you don't need to generate PDFs, skip this step.</strong></p>
+
+    <p>Pandoc recommends the following options depending on your operating system:</p>
+
+    <ul>
+        <li>Windows - <a href="https://miktex.org/">MiKTeX</a>;</li>
+        <li>macOS - <a href="https://tug.org/mactex/">MacTeX;</a></li>
+        <li>Linux - install the <strong>texlive</strong> package.</li>
+    </ul>
+
+    <p>Since this step is particularly platform dependent further details are outside the scope od this guide.</p>
+
+    <h2>OK, so what are all these files? Where do I start?</h2>
+
+    These are the files contained in this archive and what they're for:
+
+    <table>
+        <tr>
+            <th>File name</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>README.html</td>
+            <td>This file. Hi!</td>
+        </tr>
+        <tr>
+            <td>cover.jpg</td>
+            <td>A cover for the EPUB file - replace it with the appropriate image.</td>
+        </tr>
+        <tr>
+            <td>title.txt</td>
+            <td>Contains the metadata for the document - title and subtitle, author, etc.</td>
+        </tr>
+        <tr>
+            <td>text.md</td>
+            <td>Contains the document itself, formatted in Markdown.</td>
+        </tr>
+        <tr>
+            <td>accessible.docx</td>
+            <td>A template Word file with styles appropriate for low vision users.</td>
+        </tr>
+        <tr>
+            <td>accessible.css</td>
+            <td>Contains styles that are appropriate for low vision users for EPUB files.</td>
+        </tr>
+        <tr>
+            <td>build.bat</td>
+            <td>The script to build the converted files on Window.</td>
+        </tr>
+        <tr>
+            <td>build.sh</td>
+            <td>The script to build the converted files on macOS or Linux.</td>
+        </tr>
+        <tr>
+            <td>out</td>
+            <td>The folder where the converted files go.</td>
+        </tr>
+    </table>
+
+    <h2>I installed everything, now what?</h2>
+
+    <p>Run either <strong>build.bat</strong> or <strong>build.sh</strong> depending on your operating system.</p>
+    <p>You should now have a DOCX, an EPUB and a PDF file in the <strong>"out" folder</strong>. If not, there's
+        something wrong with your installation. Unfortunately, there are too many scenarios, so troubleshooting is
+        outside the scope of this guide.</p>
+
+    <h2>Writing and converting documents</h2>
+
+    <p></p>
+
+    <ol>
+        <li>Fill in the metadata in <strong>title.txt</strong>;</li>
+        <li>Get a cover page and rename it to <strong>cover.jpg</strong>;</li>
+        <li>Write the actual document, formatted in Markdown in <strong>text.md</strong>;</li>
+        <li>Generate fhe output files by running either <strong>build.bat</strong> or <strong>build.sh</strong>
+            depending on your operating system.</li>
+    </ol>
+
+    <p>Your output files should now be in the <strong>out</strong> folder!</p>
+</body>
