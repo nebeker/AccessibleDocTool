@@ -4,3 +4,7 @@
 to generate BLV accessible documents in multiple formats, from a simple Markdown source file.
 
 It uses [Pandoc](https://pandoc.org) and suggests the use of the necessary platform-specific LaTeX distribution.
+
+### To get the files
+
+Click the **Code** button and then **Download ZIP**.
