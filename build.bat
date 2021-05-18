@@ -7,6 +7,10 @@ rem replace spaces with underscores
 set name=%name: =_%
 
 pandoc.exe title.txt text.md --toc -o out\%name%.html
-pandoc.exe title.txt text.md --toc --css=accessible.css --epub-cover-image=cover.jpg -o out\%name%.epub
+if exist cover.jpg (
+    pandoc.exe title.txt text.md --toc --css=accessible.css --epub-cover-image=cover.jpg -o out\%name%.epub
+) else (
+    pandoc.exe title.txt text.md --toc --css=accessible.css -o out\%name%.epub
+)
 pandoc.exe title.txt text.md --toc --pdf-engine=xelatex --variable mainfont=Arial --variable fontsize=14pt -o out\%name%.pdf
 pandoc.exe title.txt text.md --toc --reference-doc=accessible.docx -o out\%name%.docx
