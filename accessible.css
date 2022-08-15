@@ -24,6 +24,18 @@ span.underline{ text-decoration: underline; }
 q { quotes: "“" "”" "‘" "’"; }
 div.column{ display: inline-block; vertical-align: top; width: 50%; }
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+table, th, td {
+  border: 0.05em solid;
+}
+th, td {
+  padding: 0.2em;
+}
+table {
+  border-collapse: collapse;
+}
+th {
+  font-weight: bold;
+}
 @media screen { /* Workaround for iBooks issue; see #6242 */
   .sourceCode {
     overflow: visible !important;

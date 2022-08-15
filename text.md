@@ -25,3 +25,11 @@ Steps to writing:
 2. Formatting the words.
 
 **A link: [www.ecample.com](www.example.com)**
+
+| A table header | Another table header |
+| -------------- | -------------------- |
+| 1              | Some data            |
+| 2              | Some more data       |
+| 3              | Even more data       |
+
+: A table caption
